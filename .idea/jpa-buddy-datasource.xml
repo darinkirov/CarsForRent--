@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="a51e57bb-6d4e-4181-baca-8c5f9f3a813e" name="carhiring" url="jdbc:postgresql://localhost/carhire" driverClass="org.postgresql.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="" persistence-unit-name="Users" />
+    </data-source-infos>
+  </component>
+</project>

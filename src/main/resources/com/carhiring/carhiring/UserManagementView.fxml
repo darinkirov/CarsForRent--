@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carhiring.carhiring.presentation.controllers.UserManagementController">
+    <children>
+        <TableView fx:id="userTable" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="572.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="34.0">
+            <columns>
+                <TableColumn fx:id="usernameColumn" prefWidth="75.0" text="Username" />
+                <TableColumn fx:id="roleColumn" prefWidth="75.0" text="Role" />
+            </columns>
+        </TableView>
+        <HBox layoutX="14.0" layoutY="353.0" spacing="10.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+            <children>
+                <Button fx:id="addUserButton" mnemonicParsing="false" onAction="#handleAddUser" text="Add User" />
+                <Button fx:id="editUserButton" mnemonicParsing="false" onAction="#handleEditUser" text="Edit User" />
+                <Button fx:id="deleteUserButton" mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete User" />
+            </children>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>

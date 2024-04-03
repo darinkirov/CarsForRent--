@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carhiring.carhiring.presentation.controllers.CreateCompanyController">
+    <children>
+        <TableView fx:id="companyTable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="572.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="150.0" text="Address" />
+                <TableColumn fx:id="phoneColumn" prefWidth="100.0" text="Phone" />
+            </columns>
+        </TableView>
+        <VBox layoutX="14.0" layoutY="224.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.topAnchor="214.0" >
+            <padding>
+                <Insets top="10" />
+            </padding>
+            <children>
+                <GridPane hgap="10" vgap="10">
+                    <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <TextField fx:id="companyNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    <Label text="Address:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <TextField fx:id="companyAddressTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    <Label text="Phone:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <TextField fx:id="companyPhoneTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                </GridPane>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleCreateCompany" text="Create Company" />
+                    <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
